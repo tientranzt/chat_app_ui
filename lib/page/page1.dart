@@ -82,11 +82,12 @@ class Page1 extends StatelessWidget {
           )
         ],
       ),
+
 //      https://stackoverflow.com/questions/54898767/enumerate-or-map-through-a-list-with-index-and-value-in-dart/54899730
       body: ListView(
         children: data
             .map<Widget>((item) => GestureDetector(
-          onTap: ()=> Navigator.pushNamed(context, "page2"),
+          onTap: ()=> Navigator.pushNamed(context, "page2", arguments: item["name"]),
               child: ListContact(
                     name: item["name"],
                     subTitle: item["subTitle"],

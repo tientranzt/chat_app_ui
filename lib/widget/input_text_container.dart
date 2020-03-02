@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 
 class InputTextContainer extends StatelessWidget {
+  final  size;
+  InputTextContainer({this.size});
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(top: size * 0.12),
       decoration: BoxDecoration(color: Color(0xFFE7F7FF), borderRadius: BorderRadius.circular(5)),
       child: ListTile(
         leading: Icon(Icons.mic, color: Color(0xFFDB8155),),
-//        title: Text("Your message", style: TextStyle(color: Colors.grey),),
       title: TextField(
         decoration: InputDecoration(
           hintText: "Your message",

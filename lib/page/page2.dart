@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:twodesigntwopage/widget/chat_body.dart';
 
 class Page2 extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
+    final user = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       backgroundColor: Color(0XFFFFFFFF),
       appBar: AppBar(
@@ -11,7 +13,7 @@ class Page2 extends StatelessWidget {
         title: Column(
           children: <Widget>[
             Text(
-              "Trent Walton",
+              user,
               style: TextStyle(color: Color(0xFF535A66)),
             ),
             Text("Last seen just now",

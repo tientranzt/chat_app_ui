@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_progress_bar/progress_bar.dart';
 import 'package:twodesigntwopage/widget/seem_text.dart';
 
 class VoiceContainer extends StatelessWidget {
